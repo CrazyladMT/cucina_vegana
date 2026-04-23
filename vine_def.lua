@@ -5,7 +5,6 @@
 ]]--
 
 local cv = cucina_vegana
-local mt = minetest
 
 -- Load support for intllib.
 local S = cv.get_translator
@@ -19,7 +18,7 @@ local maxlight = cv.shrub_settings.vine_light
 local percent = 3
 
 -- Register for Mapgen
-mt.register_node("cucina_vegana:wild_" .. pname, {
+core.register_node("cucina_vegana:wild_" .. pname, {
 	description = S("Wild" ) .. " " .. dname .. " " .. S("Stem"),
 	paramtype = "light",
 	walkable = true,
@@ -45,7 +44,7 @@ mt.register_node("cucina_vegana:wild_" .. pname, {
 	},
 })
 
-mt.register_node("cucina_vegana:" .. pname .. "_leaves", {
+core.register_node("cucina_vegana:" .. pname .. "_leaves", {
 	description = dname .. " " .. S("Leaves"),
 	paramtype = "light",
 	walkable = true,
@@ -78,15 +77,15 @@ mt.register_node("cucina_vegana:" .. pname .. "_leaves", {
 						end,
 })
 
-mt.register_craftitem("cucina_vegana:" .. pname .. "_grape", {
+core.register_craftitem("cucina_vegana:" .. pname .. "_grape", {
 	description = S("Grape"),
 	inventory_image = "cucina_vegana_" .. pname .. "_grape.png",
 	groups = {food = 1, food_wine = 1},
-    on_use = mt.item_eat(3)
+    on_use = core.item_eat(3)
 
 })
 
-mt.register_node("cucina_vegana:" .. pname .. "_sapling", {
+core.register_node("cucina_vegana:" .. pname .. "_sapling", {
 	description = dname .. " " .. S("Sapling"),
 	paramtype = "light",
 	walkable = true,
@@ -111,7 +110,7 @@ mt.register_node("cucina_vegana:" .. pname .. "_sapling", {
 cv.lib.register_bottom_abm("cucina_vegana:" .. pname .. "_sapling", "cucina_vegana:" .. pname .. "_bottom_1", duration, maxlight)
 
 for step = 1, bottom_steps do
-	mt.register_node("cucina_vegana:" .. pname .. "_bottom_" .. step, {
+	core.register_node("cucina_vegana:" .. pname .. "_bottom_" .. step, {
 		description = dname,
 		paramtype = "light",
 		walkable = true,
@@ -143,7 +142,7 @@ for step = 1, bottom_steps do
 
 end -- for step
 
-mt.register_abm({
+core.register_abm({
     nodenames = {"cucina_vegana:" .. pname .. "_bottom_" .. bottom_steps},
     interval = duration,
     chance = percent,
@@ -152,7 +151,7 @@ mt.register_abm({
                 local nodepos = { x = pos.x, y = pos.y+1, z = pos.z}
 	                if(cv.lib.check_light(nodepos, maxlight)) then
                         if(cv.lib.check_air(nodepos)) then
-                            mt.set_node(nodepos, {name = "cucina_vegana:" .. pname .. "_top_1"})
+                            core.set_node(nodepos, {name = "cucina_vegana:" .. pname .. "_top_1"})
 
                         end -- if(check_air)
 
@@ -160,10 +159,10 @@ mt.register_abm({
 
             end, -- function(
 
-}) -- minetest.register_abm({
+}) -- core.register_abm({
 
 for step = 1, top_steps do
-	mt.register_node("cucina_vegana:" .. pname .. "_top_" .. step, {
+	core.register_node("cucina_vegana:" .. pname .. "_top_" .. step, {
 		description = dname,
 		paramtype = "light",
 		walkable = false,

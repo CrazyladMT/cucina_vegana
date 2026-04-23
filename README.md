@@ -1,7 +1,7 @@
 # Cucina Vegana
 
 
-This Mod adds some new Plants for vegan cooking in Minetest.
+This Mod adds some new Plants for vegan cooking in Luanti.
 It supports farming and farming_redo from TenPlus.
 
 ## Soy

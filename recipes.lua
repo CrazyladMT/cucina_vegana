@@ -6,7 +6,7 @@
 --   *****           Supports              *****
 --   *******************************************
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:blueberry_pot",
 	recipe = {	{"group:food_sugar", "default:stick", "group:food_sugar"},
 				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
@@ -17,7 +17,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:blueberry_pot",
 	recipe = {	{"group:food_sugar", "default:stick", "group:food_sugar"},
 				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
@@ -28,7 +28,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:blueberry_pot",
 	recipe = {	{"cucina_vegana:molasses", "default:stick", "cucina_vegana:molasses"},
 				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
@@ -40,7 +40,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:blueberry_pot",
 	recipe = {	{"cucina_vegana:molasses", "default:stick", "cucina_vegana:molasses"},
 				{"cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree", "cucina_vegana:blueberry_puree"},
@@ -52,14 +52,14 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:bowl 5",
 	recipe = {	{"default:glass", "", "default:glass"},
 				{"default:glass", "default:glass", "default:glass"},
              }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:bread_garlic",
 	recipe = {	{"group:food_flour", "cucina_vegana:sunflower_seeds_oil", ""},
 				{"cucina_vegana:rosemary", "cucina_vegana:garlic", ""}
@@ -68,7 +68,7 @@ minetest.register_craft({
                         {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
                     }
 })
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:ciabatta_dough",
 	recipe = {	{"cucina_vegana:soy_milk", "cucina_vegana:sunflower_seeds_oil", ""},
 				{"group:food_flour", "cucina_vegana:rosemary", ""}
@@ -79,7 +79,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:coffe_cup 4",
 	recipe = {	{"cucina_vegana:coffee_powder", "bucket:bucket_water", "default:paper"},
 				{"group:food_milk", "cucina_vegana:coffee_powder", ""}
@@ -90,7 +90,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:coffee_cup 4",
 	recipe = {	{"cucina_vegana:coffee_powder", "bucket:bucket_river_water", "default:paper"},
 				{"group:food_milk", "cucina_vegana:coffee_powder", ""}
@@ -101,7 +101,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:coffee_powder",
 	recipe = {	{"group:stone", "cucina_vegana:coffee_beans_roasted", "group:stone"},
 				{"group:stone", "cucina_vegana:coffee_beans_roasted", "group:stone"}
@@ -111,7 +111,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:dandelion_suds",
 	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
 				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
@@ -119,7 +119,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:dandelion_suds",
 	recipe = {	{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
 				{"flowers:dandelion_yellow", "flowers:dandelion_yellow", "flowers:dandelion_yellow"},
@@ -127,7 +127,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:flax_seed_oil",
 	recipe = {	{"group:seed_flax", "group:seed_flax", "group:seed_flax"},
 				{"group:seed_flax", "group:seed_flax", "group:seed_flax"},
@@ -135,7 +135,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:lettuce_oil",
 	recipe = {	{"group:seed_lettuce", "group:seed_lettuce", "group:seed_lettuce"},
 				{"group:seed_lettuce", "group:seed_lettuce", "group:seed_lettuce"},
@@ -143,7 +143,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:peanut_oil",
 	recipe = {	{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
 				{"group:seed_peanut", "group:seed_peanut", "group:seed_peanut"},
@@ -151,7 +151,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:corn_oil",
 	recipe = {	{"cucina_vegana:seed_corn", "cucina_vegana:seed_corn", "cucina_vegana:seed_corn"},
 				{"cucina_vegana:seed_corn", "cucina_vegana:seed_corn", "cucina_vegana:seed_corn"},
@@ -159,7 +159,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
         output = "cucina_vegana:mushroomlight_glass 4",
         recipe = {
                   {"","default:glass",""},
@@ -169,7 +169,7 @@ minetest.register_craft({
 })
 
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:pizza_dough",
 	recipe = {	{"group:food_milk", "group:food_oil", "group:food_cheese"},
 				{"group:food_flour", "group:food_flour", "group:food_flour"}
@@ -180,7 +180,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:pizza_vegana_raw",
 	recipe = {	{"", "cucina_vegana:sauce_hollandaise", ""},
 				{"cucina_vegana:asparagus", "cucina_vegana:lettuce", "cucina_vegana:rosemary"},
@@ -192,7 +192,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:pizza_funghi_raw",
 	recipe = {	{"", "group:food_oil", "cucina_vegana:rosemary"},
 				{"flowers:mushroom_brown", "cucina_vegana:imitation_meat", "flowers:mushroom_brown"},
@@ -204,42 +204,42 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:plate 5",
 	recipe = {	{"group:wood", "", "group:wood"},
 				{"group:wood", "default:cobble", "group:wood"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:plate 2",
 	recipe = {	{"default:clay_lump", "", "default:clay_lump"},
 				{"default:clay_lump", "default:cobble", "default:clay_lump"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:steel_ingot", "", "default:steel_ingot"},
 				{"default:steel_ingot", "default:cobble", "default:steel_ingot"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:copper_ingot", "", "default:copper_ingot"},
 				{"default:copper_ingot", "default:cobble", "default:copper_ingot"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:plate 10",
 	recipe = {	{"default:tin_ingot", "", "default:tin_ingot"},
 				{"default:tin_ingot", "default:cobble", "default:tin_ingot"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_flour",
 	recipe = {	{"default:stone", "default:stone", "default:stone"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -252,7 +252,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_flour",
 	recipe = {	{"default:stone", "default:stone", "default:stone"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -265,7 +265,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_flour",
 	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -278,7 +278,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_flour",
 	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -291,7 +291,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_flour",
 	recipe = {	{"default:stone", "default:stone", "default:stone"},
 				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
@@ -304,7 +304,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_flour",
 	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
 				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
@@ -317,7 +317,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_flour",
 	recipe = {	{"default:desert_stone", "default:desert_stone", "default:desert_stone"},
 				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
@@ -330,7 +330,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_flour",
 	recipe = {	{"default:stone", "default:stone", "default:stone"},
 				{"cucina_vegana:rice", "cucina_vegana:rice", "cucina_vegana:rice"},
@@ -343,7 +343,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_starch 2",
 	recipe = {	{"wool:white", "cucina_vegana:rice", "wool:white"},
 				{"wool:white", "cucina_vegana:rice", "wool:white"},
@@ -356,7 +356,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:rice_starch 2",
 	recipe = {	{"wool:white", "cucina_vegana:rice", "wool:white"},
 				{"wool:white", "cucina_vegana:rice", "wool:white"},
@@ -369,7 +369,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "wool:white",
 	recipe = {	{"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
 				{"cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted", "cucina_vegana:flax_roasted"},
@@ -380,7 +380,7 @@ minetest.register_craft({
 --   *****           Imitations            *****
 --   *******************************************
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:imitation_butter",
 	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
@@ -389,13 +389,13 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:imitation_cheese",
 	recipe = {	{"group:dye,color_orange","cucina_vegana:imitation_butter", "cucina_vegana:imitation_butter"}
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:imitation_fish",
 	recipe = {
 				{"group:dye,color_blue","cucina_vegana:tofu", "group:dye,color_blue"},
@@ -405,7 +405,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:imitation_meat",
 	recipe = {	{"group:dye,color_red", "cucina_vegana:tofu", "group:dye,color_white"},
 				{"", "cucina_vegana:tofu", ""},
@@ -413,7 +413,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:imitation_poultry",
 	recipe = {	{"cucina_vegana:tofu", "", "group:dye,color_yellow"},
 				{"", "cucina_vegana:tofu", ""},
@@ -421,7 +421,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:soy_milk",
 	recipe = {
 			{"cucina_vegana:soy", "cucina_vegana:soy", "cucina_vegana:soy"},
@@ -430,7 +430,7 @@ minetest.register_craft({
 		},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:tofu",
 	recipe = {
 			{"cucina_vegana:soy", "cucina_vegana:soy", "cucina_vegana:soy"},
@@ -443,7 +443,7 @@ minetest.register_craft({
 --   *****       Side Dishes               *****
 --   *******************************************
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:blueberry_jam",
 	recipe = {	{"cucina_vegana:blueberry_pot_cooked", "", ""},
                 {"group:wool", "", ""},
@@ -455,7 +455,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:cucumber_in_glass",
 	recipe = {	{"cucina_vegana:cucumber", "cucina_vegana:cucumber", "cucina_vegana:cucumber"},
                 {"", "cucina_vegana:cucumber", ""},
@@ -463,7 +463,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:bowl_rice",
 	recipe = {
 				{"cucina_vegana:rice"},
@@ -475,7 +475,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:bowl_rice",
 	recipe = {
 				{"cucina_vegana:rice"},
@@ -487,7 +487,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:dandelion_honey",
 	recipe = {	{"cucina_vegana:dandelion_suds_cooking", "", ""},
                 {"group:wool", "", ""},
@@ -499,7 +499,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:edamame",
 	recipe = {	{"cucina_vegana:rosemary", "group:seed_soy", "cucina_vegana:peanut"},
                 {"group:seed_soy", "group:seed_soy", "group:seed_soy"},
@@ -507,7 +507,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sauce_hollandaise",
 	recipe = {	{"cucina_vegana:parsley", "group:food_butter", "cucina_vegana:rosemary"},
 				{"", "cucina_vegana:soy_milk", ""},
@@ -518,7 +518,7 @@ minetest.register_craft({
                    }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_oil",
 	recipe = {	{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
 				{"cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds", "cucina_vegana:sunflower_seeds"},
@@ -526,7 +526,7 @@ minetest.register_craft({
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:molasses",
 	recipe = {
 				{"", "default:stick", ""},
@@ -539,7 +539,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:molasses",
 	recipe = {
 				{"", "default:stick", ""},
@@ -552,7 +552,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:peanut_butter",
 	recipe = {
 				{"cucina_vegana:peanut", "default:stick", "cucina_vegana:peanut"},
@@ -564,7 +564,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:vegan_strawberry_milk",
 	recipe = {
 				{"cucina_vegana:strawberry", "default:stick", "cucina_vegana:strawberry"},
@@ -576,7 +576,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:vegan_strawberry_milk",
 	recipe = {
 				{"group:food_strawberry", "default:stick", "group:food_strawberry"},
@@ -591,7 +591,7 @@ minetest.register_craft({
 --   *****           Dinners               *****
 --   *******************************************
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:asparagus_hollandaise",
 	recipe = {	{"cucina_vegana:asparagus", "cucina_vegana:sauce_hollandaise", "cucina_vegana:parsley"},
 				{"", "group:food_plate", ""}
@@ -600,7 +600,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:asparagus_rice",
 	recipe = {
 				{"cucina_vegana:asparagus", "group:food_rice", "group:food_butter"},
@@ -611,7 +611,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:asparagus_soup",
 	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:asparagus"},
 				{"", "cucina_vegana:soy_milk", ""},
@@ -622,7 +622,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:fish_parsley_rosemary",
 	recipe = {
 				{"cucina_vegana:parsley","group:food_oil", "cucina_vegana:rosemary"},
@@ -634,7 +634,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:fryer_raw",
 	recipe = {
 				{"default:paper","", "default:paper"},
@@ -646,7 +646,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:fryer_raw",
 	recipe = {
 				{"default:paper","", "default:paper"},
@@ -655,7 +655,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:kohlrabi_soup",
 	recipe = {	{"cucina_vegana:kohlrabi", "group:food_oil", "cucina_vegana:parsley"},
 				{"", "bucket:bucket_water", ""},
@@ -666,7 +666,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:kohlrabi_soup",
 	recipe = {	{"cucina_vegana:kohlrabi", "group:food_oil", "cucina_vegana:parsley"},
 				{"", "bucket:bucket_river_water", ""},
@@ -677,7 +677,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:salad_bowl",
 	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
 				{"", "group:food_oil", ""},
@@ -688,7 +688,7 @@ minetest.register_craft({
                            }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:salad_hollandaise",
 	recipe = {
 				{"cucina_vegana:sauce_hollandaise", "cucina_vegana:salad_bowl", ""}
@@ -698,7 +698,7 @@ minetest.register_craft({
                            }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:salad_hollandaise",
 	recipe = {	{"cucina_vegana:parsley", "cucina_vegana:lettuce", "cucina_vegana:chives"},
 				{"cucina_vegana:sauce_hollandaise", "group:food_oil", ""},
@@ -711,7 +711,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sea_salad",
 	recipe = {	{"default:jungleleaves", "cucina_vegana:parsley", "cucina_vegana:lettuce"},
 				{"cucina_vegana:chives", "bucket:bucket_water", "cucina_vegana:asparagus"},
@@ -723,7 +723,7 @@ minetest.register_craft({
 
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:soy_soup",
 	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:parsley"},
 				{"", "cucina_vegana:soy_milk", ""},
@@ -734,7 +734,7 @@ minetest.register_craft({
 						}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:tofu_chives_rosemary",
 	recipe = {	{"cucina_vegana:chives", "", "cucina_vegana:rosemary"},
 				{"", "cucina_vegana:tofu", ""},
@@ -742,7 +742,7 @@ minetest.register_craft({
 			},
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:vegan_sushi",
 	recipe = {	{"cucina_vegana:imitation_fish", "cucina_vegana:bowl_rice", ""},
 				{"default:papyrus", "", ""}
@@ -756,7 +756,7 @@ minetest.register_craft({
 --   *****          Miscelanous            *****
 --   *******************************************
 
-minetest.register_craft({
+core.register_craft({
 	type = "shapeless",
 	output = "cucina_vegana:sunflower_seeds 4",
 	recipe = {"flowers:sunflower"},
@@ -765,14 +765,14 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_dough",
 	recipe = {	{"", "cucina_vegana:sunflower_seeds", ""},
 				{"farming:flour", "farming:flour", "farming:flour"}
 			}
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "cucina_vegana:sunflower_seeds_dough",
 	recipe = {	{"", "cucina_vegana:sunflower_seeds", ""},
 				{"group:food_flour", "group:food_flour", "group:food_flour"}
@@ -780,7 +780,7 @@ minetest.register_craft({
 })
 
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:stone", "cucina_vegana:flax_roasted", "default:stone"},
 				{"default:stone", "cucina_vegana:flax_roasted", "default:stone"},
@@ -792,7 +792,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:desert_stone", "cucina_vegana:flax_roasted", "default:desert_stone"},
 				{"default:desert_stone", "cucina_vegana:flax_roasted", "default:desert_stone"},
@@ -804,7 +804,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:cobble", "cucina_vegana:flax_roasted", "default:cobble"},
 				{"default:cobble", "cucina_vegana:flax_roasted", "default:cobble"},
@@ -816,7 +816,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:desert_cobble", "cucina_vegana:flax_roasted", "default:desert_cobble"},
 				{"default:desert_cobble", "cucina_vegana:flax_roasted", "default:desert_cobble"},
@@ -828,7 +828,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:stone", "cucina_vegana:flax_roasted", "default:stone"},
 				{"default:stone", "cucina_vegana:flax_roasted", "default:stone"},
@@ -840,7 +840,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:desert_stone", "cucina_vegana:flax_roasted", "default:desert_stone"},
 				{"default:desert_stone", "cucina_vegana:flax_roasted", "default:desert_stone"},
@@ -852,7 +852,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:cobble", "cucina_vegana:flax_roasted", "default:cobble"},
 				{"default:cobble", "cucina_vegana:flax_roasted", "default:cobble"},
@@ -864,7 +864,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "default:paper 4",
 	recipe = {	{"default:desert_cobble", "cucina_vegana:flax_roasted", "default:desert_cobble"},
 				{"default:desert_cobble", "cucina_vegana:flax_roasted", "default:desert_cobble"},
@@ -876,7 +876,7 @@ minetest.register_craft({
                     }
 })
 
-minetest.register_craft({
+core.register_craft({
 	output = "farming:cotton 2",
 	recipe = {
               {"cucina_vegana:flax_roasted","default:stick","cucina_vegana:flax_roasted"},
@@ -886,7 +886,7 @@ minetest.register_craft({
                 },
 })
 
-minetest.register_craft({
+core.register_craft({
 	type = "shapeless",
 	output = "cucina_vegana:seed_corn 10",
 	recipe = {"cucina_vegana:corn"},

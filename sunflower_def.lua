@@ -10,12 +10,12 @@ local S = cucina_vegana.get_translator
 local dname = S("Sunflower")
 local pname = "sunflower"
 local step = 5
-local modname = minetest.get_current_modname()
+local modname = core.get_current_modname()
 
-if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
+if(core.registered_nodes["flowers:sunflower"]  ~= nil) then
 	print("[MOD] " .. modname .. " Sunflowers available.")
 	print("[MOD] " .. modname .. " using \"flowers:sunflower\".")
-    minetest.log("info", "[MOD] " .. modname .. ": Sunflowers available. Using \"flowers:sunflower\".")
+    core.log("info", "[MOD] " .. modname .. ": Sunflowers available. Using \"flowers:sunflower\".")
 
 else
 
@@ -30,7 +30,7 @@ else
 	})
 
 	-- Register for Mapgen
-	minetest.register_node("cucina_vegana:wild_" .. pname, {
+	core.register_node("cucina_vegana:wild_" .. pname, {
 		description = S("Wild") .. " " .. dname,
 		paramtype = "light",
 		walkable = false,
@@ -55,8 +55,8 @@ else
 		},
 	})
 
-	minetest.override_item("cucina_vegana:" .. pname .. "_4", {visual_scale = 1.3})
-	minetest.override_item("cucina_vegana:" .. pname .. "_5", {visual_scale = 1.5})
+	core.override_item("cucina_vegana:" .. pname .. "_4", {visual_scale = 1.3})
+	core.override_item("cucina_vegana:" .. pname .. "_5", {visual_scale = 1.5})
 
 end
 

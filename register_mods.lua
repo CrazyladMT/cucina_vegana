@@ -85,7 +85,7 @@
 --   *****           Technic-Support       *****
 --   *******************************************
 
-if(minetest.get_modpath("technic")) then
+if(core.get_modpath("technic")) then
 
 
 	-- Support Compressor
@@ -178,13 +178,13 @@ if(minetest.get_modpath("technic")) then
 
     end
 
-end -- if(minetest.get_modpath("technic"
+end -- if(core.get_modpath("technic"
 
 --   *******************************************
 --   *****           Hunger-Support        *****
 --   *******************************************
 
-if(minetest.get_modpath("hunger")) then
+if(core.get_modpath("hunger")) then
     for key, item in pairs(cv_items) do
         hunger.register_food(item)
 
@@ -196,7 +196,7 @@ end -- hunger
 --   *****           Hunger_ng-Support        *****
 --   **********************************************
 
-if(minetest.get_modpath("hunger_ng")) then
+if(core.get_modpath("hunger_ng")) then
     local add = hunger_ng.add_hunger_data
 
     for key, item in pairs(cv_items) do
@@ -210,7 +210,7 @@ end -- hunger_ng
 --   *****           Wine-Support          *****
 --   *******************************************
 
-if(minetest.get_modpath("wine")) then
+if(core.get_modpath("wine")) then
     wine:add_item({ {"cucina_vegana:molasses", "wine:glass_rum"},
                     {"cucina_vegana:dandelion_honey", "wine:glass_mead"},
                     {"cucina_vegana:rice", "wine:glass_sake"},
@@ -223,10 +223,10 @@ end -- wine
 --   *****           Diet-Support          *****
 --   *******************************************
 
-if(minetest.get_modpath("diet")) then
+if(core.get_modpath("diet")) then
 
     local function overwrite(name, hunger_change, replace_with_item, poisen, heal)
-        local tab = minetest.registered_items[name]
+        local tab = core.registered_items[name]
         if not tab then
             return
         end
@@ -238,13 +238,13 @@ if(minetest.get_modpath("diet")) then
 
     end -- for key,item
 
-end -- if(minetest.get_modpath("diet
+end -- if(core.get_modpath("diet
 
 --   *******************************************
 --   *****           Petz-Support          *****
 --   *******************************************
 
-if(minetest.get_modpath("petz")) then
+if(core.get_modpath("petz")) then
     cucina_vegana.add_group("petz:bucket_milk", {food_milk = 1})
     cucina_vegana.add_group("petz:chicken_egg", {food = 2, food_egg = 1})
     cucina_vegana.add_group("petz:ducky_egg",{food = 2, food_egg = 1})
@@ -255,7 +255,7 @@ end
 --   *****      Lemontree-Support          *****
 --   *******************************************
 
-if(minetest.get_modpath("lemontree")) then
+if(core.get_modpath("lemontree")) then
     cucina_vegana.add_group("lemontree:lemon", {food_lemon = 1, food_fruit = 1})
 
 end
@@ -264,7 +264,7 @@ end
 --   *****      Clementinetree-Support          *****
 --   *******************************************
 
-if(minetest.get_modpath("clementinetree")) then
+if(core.get_modpath("clementinetree")) then
     cucina_vegana.add_group("clementinetree:clementine", {food_orange = 1, food_fruit = 1})
 
 end
@@ -272,8 +272,8 @@ end
 --   *******************************************
 --   *****      Techage-Support          *****
 --   *******************************************
-if(minetest.get_modpath("techage") and techage.register_plant) then
-	for name,ndef in pairs(minetest.registered_nodes) do
+if(core.get_modpath("techage") and techage.register_plant) then
+	for name,ndef in pairs(core.registered_nodes) do
 		if type(name) == "string" then
 			local mod = string.split(name, ":")[1]
 			if mod == "cucina_vegana" then

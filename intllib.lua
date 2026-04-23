@@ -22,7 +22,7 @@ local function format(str, ...)
 end
 
 local gettext, ngettext
-if minetest.get_modpath("intllib") then
+if core.get_modpath("intllib") then
 	if intllib.make_gettext_pair then
 		-- New method using gettext.
 		gettext, ngettext = intllib.make_gettext_pair()

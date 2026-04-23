@@ -10,7 +10,7 @@ local cv = cucina_vegana
 --   *****           Supports              *****
 --   *******************************************
 
-minetest.register_node("cucina_vegana:bowl", {
+core.register_node("cucina_vegana:bowl", {
 	description = S("Glass Bowl"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl.png"},
@@ -27,7 +27,7 @@ minetest.register_node("cucina_vegana:bowl", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:flax_seed_oil", {
+core.register_node("cucina_vegana:flax_seed_oil", {
 	description = S("Bottle of Flaxseed Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_flax_seed_oil.png"},
@@ -36,7 +36,7 @@ minetest.register_node("cucina_vegana:flax_seed_oil", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	on_use = core.item_eat(2, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -45,7 +45,7 @@ minetest.register_node("cucina_vegana:flax_seed_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:mushroomlight_glass", {
+core.register_node("cucina_vegana:mushroomlight_glass", {
 	description = S("Mushroomlight Glass"),
 	drawtype = "glasslike_framed_optional",
 	tiles = {"cucina_vegana_mushroom_light.png","cucina_vegana_mushroom_light_detail.png"},
@@ -58,7 +58,7 @@ minetest.register_node("cucina_vegana:mushroomlight_glass", {
 	sounds = default.node_sound_glass_defaults()
 })
 
-minetest.register_node("cucina_vegana:peanut_oil", {
+core.register_node("cucina_vegana:peanut_oil", {
 	description = S("Bottle of Peanut Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_peanut_oil.png"},
@@ -67,7 +67,7 @@ minetest.register_node("cucina_vegana:peanut_oil", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5, "vessels:glass_bottle"),
+	on_use = core.item_eat(5, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -76,7 +76,7 @@ minetest.register_node("cucina_vegana:peanut_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:plate", {
+core.register_node("cucina_vegana:plate", {
 	description = S("Plate"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_plate.png"},
@@ -93,7 +93,7 @@ minetest.register_node("cucina_vegana:plate", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
+core.register_node("cucina_vegana:sunflower_seeds_oil", {
 	description = S("Bottle of Sunflower Seeds Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_sunflower_seeds_oil.png"},
@@ -102,7 +102,7 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	on_use = core.item_eat(2, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -111,7 +111,7 @@ minetest.register_node("cucina_vegana:sunflower_seeds_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:corn_oil", {
+core.register_node("cucina_vegana:corn_oil", {
 	description = S("Bottle of Corn Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_corn_oil.png"},
@@ -120,7 +120,7 @@ minetest.register_node("cucina_vegana:corn_oil", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	on_use = core.item_eat(2, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -133,7 +133,7 @@ minetest.register_node("cucina_vegana:corn_oil", {
 --   *****       Síde Dishes               *****
 --   *******************************************
 
-minetest.register_node("cucina_vegana:blueberry_jam", {
+core.register_node("cucina_vegana:blueberry_jam", {
 	description = S("Blueberry Jam"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_blueberry_jam.png"},
@@ -141,7 +141,7 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 	wield_image = "cucina_vegana_blueberry_jam.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(8),
+	on_use = core.item_eat(8),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -150,7 +150,7 @@ minetest.register_node("cucina_vegana:blueberry_jam", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:coffee_cup", {
+core.register_node("cucina_vegana:coffee_cup", {
 	description = S("Cup of Coffee cold"),
 	drawtype = "mesh",
 	mesh = "cucina_vegana_coffee_cup.obj",
@@ -161,7 +161,7 @@ minetest.register_node("cucina_vegana:coffee_cup", {
 	wield_image = "cucina_vegana_coffee_cup_inv.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(2),
+	on_use = core.item_eat(2),
 	paramtype2 = "facedir",
 	param2 = "4dir",
 	walkable = true,
@@ -172,7 +172,7 @@ minetest.register_node("cucina_vegana:coffee_cup", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:coffee_cup_hot", {
+core.register_node("cucina_vegana:coffee_cup_hot", {
 	description = S("Cup of Coffee hot"),
 	drawtype = "mesh",
 	mesh = "cucina_vegana_coffee_cup.obj",
@@ -201,7 +201,7 @@ minetest.register_node("cucina_vegana:coffee_cup_hot", {
 	on_use = function(itemstack, playerobject, pointed_thing)
 				if (not playerobject) then return end
 
-				minetest.item_eat(2)
+				core.item_eat(2)
 				cv.lib.coffee_effect(playerobject)
 				itemstack:take_item(1)
 				return itemstack
@@ -214,7 +214,7 @@ minetest.register_node("cucina_vegana:coffee_cup_hot", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:cucumber_in_glass", {
+core.register_node("cucina_vegana:cucumber_in_glass", {
 	description = S("Cucumber in Glass"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_cucumber_in_glass.png"},
@@ -222,7 +222,7 @@ minetest.register_node("cucina_vegana:cucumber_in_glass", {
 	wield_image = "cucina_vegana_cucumber_in_glass.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(5),
+	on_use = core.item_eat(5),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -231,7 +231,7 @@ minetest.register_node("cucina_vegana:cucumber_in_glass", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:ciabatta_bread", {
+core.register_node("cucina_vegana:ciabatta_bread", {
 	description = S("Ciabatta Bread"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_ciabatta_bread.png"},
@@ -239,7 +239,7 @@ minetest.register_node("cucina_vegana:ciabatta_bread", {
 	wield_image = "cucina_vegana_ciabatta_bread.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(4),
+	on_use = core.item_eat(4),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -248,7 +248,7 @@ minetest.register_node("cucina_vegana:ciabatta_bread", {
 	groups = {dig_immediate = 3, attached_node = 1, food_bread = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:edamame", {
+core.register_node("cucina_vegana:edamame", {
 	description = S("Edamame (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_edamame.png"},
@@ -265,13 +265,13 @@ minetest.register_node("cucina_vegana:edamame", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:edamame_cooked", {
+core.register_node("cucina_vegana:edamame_cooked", {
 	description = S("Edamame"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_edamame_cooked.png"},
 	inventory_image = "cucina_vegana_edamame_cooked.png",
 	wield_image = "cucina_vegana_edamame_cooked.png",
-	on_use = minetest.item_eat(4, "cucina_vegana:plate"),
+	on_use = core.item_eat(4, "cucina_vegana:plate"),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -283,7 +283,7 @@ minetest.register_node("cucina_vegana:edamame_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:lettuce_oil", {
+core.register_node("cucina_vegana:lettuce_oil", {
 	description = S("Salad Oil"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_lettuce_oil.png"},
@@ -291,7 +291,7 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 	wield_image = "cucina_vegana_lettuce_oil.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	on_use = core.item_eat(2, "vessels:glass_bottle"),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -301,7 +301,7 @@ minetest.register_node("cucina_vegana:lettuce_oil", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:peanut_butter", {
+core.register_node("cucina_vegana:peanut_butter", {
 	description = S("Peanut Butter"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_peanut_butter.png"},
@@ -309,7 +309,7 @@ minetest.register_node("cucina_vegana:peanut_butter", {
 	wield_image = "cucina_vegana_peanut_butter.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(10),
+	on_use = core.item_eat(10),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -318,13 +318,13 @@ minetest.register_node("cucina_vegana:peanut_butter", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, food_sweet = 1, food_butter = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:salad_bowl", {
+core.register_node("cucina_vegana:salad_bowl", {
 	description = S("Glass Salad Bowl"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_salad_bowl.png"},
 	inventory_image = "cucina_vegana_salad_bowl.png",
 	wield_image = "cucina_vegana_salad_bowl.png",
-	on_use = minetest.item_eat(4, "cucina_vegana:bowl"),
+	on_use = core.item_eat(4, "cucina_vegana:bowl"),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -336,7 +336,7 @@ minetest.register_node("cucina_vegana:salad_bowl", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:sauce_hollandaise", {
+core.register_node("cucina_vegana:sauce_hollandaise", {
 	description = S("Sauce Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_sauce_hollandaise.png"},
@@ -345,7 +345,7 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(3, "vessels:glass_bottle"),
+	on_use = core.item_eat(3, "vessels:glass_bottle"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -354,13 +354,13 @@ minetest.register_node("cucina_vegana:sauce_hollandaise", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:sea_salad", {
+core.register_node("cucina_vegana:sea_salad", {
 	description = S("Sea Salad Bowl"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_sea_salad.png"},
 	inventory_image = "cucina_vegana_sea_salad.png",
 	wield_image = "cucina_vegana_sea_salad.png",
-	on_use = minetest.item_eat(5, "cucina_vegana:bowl"),
+	on_use = core.item_eat(5, "cucina_vegana:bowl"),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -372,14 +372,14 @@ minetest.register_node("cucina_vegana:sea_salad", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:popcorn", {
+core.register_node("cucina_vegana:popcorn", {
 	description = S("Popcorn"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_popcorn.png"},
 	inventory_image = "cucina_vegana_popcorn.png",
 	wield_image = "cucina_vegana_popcorn.png",
 	paramtype2 = 3, -- #
-	on_use = minetest.item_eat(3),
+	on_use = core.item_eat(3),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -395,7 +395,7 @@ minetest.register_node("cucina_vegana:popcorn", {
 --   *****           Dinners               *****
 --   *******************************************
 
-minetest.register_node("cucina_vegana:asparagus_hollandaise", {
+core.register_node("cucina_vegana:asparagus_hollandaise", {
 	description = S("Asparagus Hollandaise (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_hollandaise.png"},
@@ -412,7 +412,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:asparagus_rice", {
+core.register_node("cucina_vegana:asparagus_rice", {
 	description = S("Asparagus on Rice (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_rice.png"},
@@ -429,7 +429,7 @@ minetest.register_node("cucina_vegana:asparagus_rice", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:asparagus_soup", {
+core.register_node("cucina_vegana:asparagus_soup", {
 	description = S("Asparagus Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_soup.png"},
@@ -446,7 +446,7 @@ minetest.register_node("cucina_vegana:asparagus_soup", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:bowl_rice", {
+core.register_node("cucina_vegana:bowl_rice", {
 	description = S("Bowl of Rice (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl_rice.png"},
@@ -463,7 +463,7 @@ minetest.register_node("cucina_vegana:bowl_rice", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
+core.register_node("cucina_vegana:fish_parsley_rosemary", {
 	description = S("Fish on Parsley and Rosemary (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary.png"},
@@ -480,7 +480,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:fryer_raw", {
+core.register_node("cucina_vegana:fryer_raw", {
 	description = S("Fryer (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fryer_raw.png"},
@@ -496,7 +496,7 @@ minetest.register_node("cucina_vegana:fryer_raw", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
 })
 
-minetest.register_node("cucina_vegana:fryer", {
+core.register_node("cucina_vegana:fryer", {
 	description = S("Fryer"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fryer.png"},
@@ -505,7 +505,7 @@ minetest.register_node("cucina_vegana:fryer", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(8),
+	on_use = core.item_eat(8),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -513,7 +513,7 @@ minetest.register_node("cucina_vegana:fryer", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:kohlrabi_soup", {
+core.register_node("cucina_vegana:kohlrabi_soup", {
 	description = S("Kohlrabi Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_kohlrabi_soup.png"},
@@ -530,13 +530,13 @@ minetest.register_node("cucina_vegana:kohlrabi_soup", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:salad_hollandaise", {
+core.register_node("cucina_vegana:salad_hollandaise", {
 	description = S("Salad Bowl Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_salad_hollandaise.png"},
 	inventory_image = "cucina_vegana_salad_hollandaise.png",
 	wield_image = "cucina_vegana_salad_hollandaise.png",
-	on_use = minetest.item_eat(5, "cucina_vegana:bowl"),
+	on_use = core.item_eat(5, "cucina_vegana:bowl"),
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
@@ -548,7 +548,7 @@ minetest.register_node("cucina_vegana:salad_hollandaise", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:soy_soup", {
+core.register_node("cucina_vegana:soy_soup", {
 	description = S("Soy Soup (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_soy_soup.png"},
@@ -565,7 +565,7 @@ minetest.register_node("cucina_vegana:soy_soup", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
+core.register_node("cucina_vegana:tofu_chives_rosemary", {
 	description = S("Tofu on Chives and Rosemary (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_tofu_chives_rosemary.png"},
@@ -574,7 +574,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = core.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -587,7 +587,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary", {
 --   *****       Dinners cooked            *****
 --   *******************************************
 
-minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
+core.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
 	description = S("Asparagus Hollandaise"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_hollandaise_cooked.png"},
@@ -596,7 +596,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = core.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -605,7 +605,7 @@ minetest.register_node("cucina_vegana:asparagus_hollandaise_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
+core.register_node("cucina_vegana:asparagus_rice_cooked", {
 	description = S("Asparagus on Rice"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_rice_cooked.png"},
@@ -614,7 +614,7 @@ minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
+	on_use = core.item_eat(6,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -623,7 +623,7 @@ minetest.register_node("cucina_vegana:asparagus_rice_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
+core.register_node("cucina_vegana:asparagus_soup_cooked", {
 	description = S("Asparagus Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_asparagus_soup_cooked.png"},
@@ -632,7 +632,7 @@ minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = core.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -641,7 +641,7 @@ minetest.register_node("cucina_vegana:asparagus_soup_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:bowl_rice_cooked", {
+core.register_node("cucina_vegana:bowl_rice_cooked", {
 	description = S("Bowl of Rice"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_bowl_rice_cooked.png"},
@@ -649,7 +649,7 @@ minetest.register_node("cucina_vegana:bowl_rice_cooked", {
 	wield_image = "cucina_vegana_bowl_rice_cooked.png",
 	paramtype = "light",
 	is_ground_content = false,
-	on_use = minetest.item_eat(4,  "cucina_vegana:bowl"),
+	on_use = core.item_eat(4,  "cucina_vegana:bowl"),
 	walkable = false,
 	selection_box = {
 		type = "fixed",
@@ -659,7 +659,7 @@ minetest.register_node("cucina_vegana:bowl_rice_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
+core.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 	description = S("Fish on Parsley and Rosemary"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_fish_parsley_rosemary_cooked.png"},
@@ -668,7 +668,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
+	on_use = core.item_eat(6,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -677,7 +677,7 @@ minetest.register_node("cucina_vegana:fish_parsley_rosemary_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
+core.register_node("cucina_vegana:kohlrabi_soup_cooked", {
 	description = S("Kohlrabi Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_kohlrabi_soup_cooked.png"},
@@ -686,7 +686,7 @@ minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = core.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -695,7 +695,7 @@ minetest.register_node("cucina_vegana:kohlrabi_soup_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:pizza_vegana_raw", {
+core.register_node("cucina_vegana:pizza_vegana_raw", {
 	description = S("Pizza Vegana (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_pizza_vegana_raw.png"},
@@ -711,7 +711,7 @@ minetest.register_node("cucina_vegana:pizza_vegana_raw", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
 })
 
-minetest.register_node("cucina_vegana:pizza_vegana", {
+core.register_node("cucina_vegana:pizza_vegana", {
 	description = S("Pizza Vegana"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_pizza_vegana.png"},
@@ -720,7 +720,7 @@ minetest.register_node("cucina_vegana:pizza_vegana", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6),
+	on_use = core.item_eat(6),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -728,7 +728,7 @@ minetest.register_node("cucina_vegana:pizza_vegana", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:pizza_funghi_raw", {
+core.register_node("cucina_vegana:pizza_funghi_raw", {
 	description = S("Pizza Funghi (raw)"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_pizza_funghi_raw.png"},
@@ -744,7 +744,7 @@ minetest.register_node("cucina_vegana:pizza_funghi_raw", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1},
 })
 
-minetest.register_node("cucina_vegana:pizza_funghi", {
+core.register_node("cucina_vegana:pizza_funghi", {
 	description = S("Pizza Funghi"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_pizza_funghi.png"},
@@ -753,7 +753,7 @@ minetest.register_node("cucina_vegana:pizza_funghi", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6),
+	on_use = core.item_eat(6),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -761,7 +761,7 @@ minetest.register_node("cucina_vegana:pizza_funghi", {
 	groups = {dig_immediate = 3, attached_node = 1, food_vegan = 1, eatable = 1},
 })
 
-minetest.register_node("cucina_vegana:soy_soup_cooked", {
+core.register_node("cucina_vegana:soy_soup_cooked", {
 	description = S("Soy Soup"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_soy_soup_cooked.png"},
@@ -770,7 +770,7 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(5,  "cucina_vegana:plate"),
+	on_use = core.item_eat(5,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
@@ -779,7 +779,7 @@ minetest.register_node("cucina_vegana:soy_soup_cooked", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
+core.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
 	description = S("Tofu on Chives and Rosemary"),
 	drawtype = "plantlike",
 	tiles = {"cucina_vegana_tofu_chives_rosemary_cooked.png"},
@@ -788,7 +788,7 @@ minetest.register_node("cucina_vegana:tofu_chives_rosemary_cooked", {
 	paramtype = "light",
 	is_ground_content = false,
 	walkable = false,
-	on_use = minetest.item_eat(6,  "cucina_vegana:plate"),
+	on_use = core.item_eat(6,  "cucina_vegana:plate"),
 	selection_box = {
 		type = "fixed",
 		fixed = {-0.25, -0.5, -0.25, 0.25, 0.3, 0.25}
