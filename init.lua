@@ -2,7 +2,7 @@
 	**********************************************
 	***             Cucina Vegana              ***
     ***                                        ***
-    ***  Cucina Vegana is a Mod for Minetest   ***
+    ***  Cucina Vegana is a Mod for Luanti     ***
     ***  and supports farming or farming_redo  ***
     ***  by TenPlus.                           ***
     ***                                        ***
@@ -19,29 +19,29 @@ cucina_vegana.settings = {}
 cucina_vegana.plant_settings = {}
 cucina_vegana.shrub_settings = {}
 cucina_vegana.plant_settings.bonemeal_list = {}
-cucina_vegana.farming_ng = minetest.get_modpath("farming_nextgen")
-cucina_vegana.signs_bot = minetest.get_modpath("signs_bot")
+cucina_vegana.farming_ng = core.get_modpath("farming_nextgen")
+cucina_vegana.signs_bot = core.get_modpath("signs_bot")
 cucina_vegana.register_signs_bot = nil
 cucina_vegana.plant_settings.germ_launch = 0
-cucina_vegana.modname = minetest.get_current_modname()
+cucina_vegana.modname = core.get_current_modname()
 
-local modpath = minetest.get_modpath(minetest.get_current_modname())
+local modpath = core.get_modpath(core.get_current_modname())
 local modname = cucina_vegana.modname
 
 local S
 
-if(minetest.get_modpath("intllib")) then
+if(core.get_modpath("intllib")) then
     S = dofile(modpath .."/intllib.lua")
-    minetest.log("info","[MOD] " .. modname .. ": translating in intllib-mode.")
+    core.log("info","[MOD] " .. modname .. ": translating in intllib-mode.")
 
-elseif minetest.get_translator ~= nil then
-    S = minetest.get_translator("cucina_vegana")
-    minetest.log("info", "[MOD] " .. modname .. ": translating in minetest-mode.")
+elseif core.get_translator ~= nil then
+    S = core.get_translator("cucina_vegana")
+    core.log("info", "[MOD] " .. modname .. ": translating in minetest-mode.")
 
 else
     S = function ( s ) return s end
 
-end -- if(minetest.get_modpath(
+end -- if(core.get_modpath(
 
 cucina_vegana.get_translator = S
 
@@ -56,18 +56,18 @@ end
 -- looking if farming_redo is really activ? ... \/('')\/
 if(farming.mod ~= nil and farming.mod == "redo") then
 	cucina_vegana.farming_default = false
-    minetest.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
+    core.log("info", "[MOD] " .. modname .. ": farming_redo mode activated.")
 
 else
-    minetest.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
+    core.log("info", "[MOD] " .. modname .. ": default farming mode activated.")
 
 end -- if(farming.mod
 
 cucina_vegana.plant_settings.bonemeal = false         -- Support for bonemeal disabled
-if(minetest.get_modpath("bonemeal")) or minetest.get_modpath("maidroid") then
+if(core.get_modpath("bonemeal")) or core.get_modpath("maidroid") then
     cucina_vegana.plant_settings.bonemeal = true
 
-end -- if(minetest.get_modpath("bonemeal"
+end -- if(core.get_modpath("bonemeal"
 
 local plants = {
 
@@ -102,11 +102,11 @@ for pname, value in pairs(plants) do
         -- Load all flowers in default-mode
 			dofile(modpath .. "/" .. pname .. ".lua")
 			dofile(modpath .. "/".. pname .. ".lua")
-			minetest.register_alias(n_redo, n_default)
+			core.register_alias(n_redo, n_default)
 
 	end -- if(value)
 
-    minetest.log("info", "[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
+    core.log("info", "[MOD] " .. modname .. " Module: " .. pname .. " loaded.")
 
 end -- for
 
@@ -119,7 +119,7 @@ for sname, value in pairs(shrubs) do
 	if(value) then
 		dofile(modpath .. "/" .. sname .. "_def.lua")
 		dofile(modpath .. "/" .. sname .. ".lua")
-	    minetest.log("info", "[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
+	    core.log("info", "[MOD] " .. modname .. " Module: " .. sname .. " loaded.")
 	end -- if(value)
 
 
@@ -137,9 +137,9 @@ dofile(modpath .. "/recipes_5xx.lua") -- New recipes with MT 5.0
 dofile(modpath .. "/register_mods.lua")
 dofile(modpath .. "/aliases.lua")
 
-if(minetest.get_modpath("bonemeal")) then
+if(core.get_modpath("bonemeal")) then
     bonemeal:add_crop(cucina_vegana.plant_settings.bonemeal_list)
 
 end -- if(cucina_vegana.plant_settings.bonemeal
 
-minetest.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " loaded.")
+core.log("info", "[MOD] " .. modname .. " Version " .. cucina_vegana.version .. " loaded.")

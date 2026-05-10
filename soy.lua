@@ -22,7 +22,7 @@ farming.register_plant("cucina_vegana:".. pname, {
 })
 
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_".. pname, {
+core.register_node("cucina_vegana:wild_".. pname, {
 	description = S("Wild") .. " " .. dname,
 	paramtype = "light",
 	walkable = false,
@@ -50,9 +50,9 @@ minetest.register_node("cucina_vegana:wild_".. pname, {
 
 cucina_vegana.add_group("cucina_vegana:seed_"..pname, {seed_soy = 1})
 
-minetest.register_alias("soy:wild_".. pname, "cucina_vegana:wild_".. pname)
-minetest.register_alias("soy:".. pname, "cucina_vegana:".. pname)
-minetest.register_alias("soy:seed_".. pname, "cucina_vegana:seed_".. pname)
+core.register_alias("soy:wild_".. pname, "cucina_vegana:wild_".. pname)
+core.register_alias("soy:".. pname, "cucina_vegana:".. pname)
+core.register_alias("soy:seed_".. pname, "cucina_vegana:seed_".. pname)
 
 if(cucina_vegana.plant_settings.bonemeal) then
     table.insert(cucina_vegana.plant_settings.bonemeal_list,
@@ -71,7 +71,7 @@ if(cucina_vegana.signs_bot) then
     cucina_vegana.register_signs_bot(pname, 1, step)
 end
 
-minetest.register_decoration({
+core.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_grass"},
 	sidelen = 16,

@@ -1,16 +1,16 @@
-local modpath = minetest.get_modpath(minetest.get_current_modname())
+local modpath = core.get_modpath(core.get_current_modname())
 
-if(minetest.registered_nodes["flowers:sunflower"]  ~= nil) then
-	print("[MOD] " .. minetest.get_current_modname() .. " Sunflowers available.")
-	print("[MOD] " .. minetest.get_current_modname() .. " using \"flowers:sunflower\".")
+if(core.registered_nodes["flowers:sunflower"]  ~= nil) then
+	print("[MOD] " .. core.get_current_modname() .. " Sunflowers available.")
+	print("[MOD] " .. core.get_current_modname() .. " using \"flowers:sunflower\".")
 
 else
 
-	print("[MOD] " .. minetest.get_current_modname() .. " no Sunflowers available.")
-	print("[MOD] " .. minetest.get_current_modname() .. " use own Sunflowers.")
+	print("[MOD] " .. core.get_current_modname() .. " no Sunflowers available.")
+	print("[MOD] " .. core.get_current_modname() .. " use own Sunflowers.")
 
 
-	minetest.register_decoration({
+	core.register_decoration({
 		deco_type = "simple",
 		place_on = {"default:dirt_with_grass", "default:dirt_with_dry_grass"},
 		sidelen = 16,
@@ -27,7 +27,7 @@ else
 		decoration = "cucina_vegana:wild_sunflower",
 		})
 
-	minetest.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
+	core.register_alias("flowers:sunflower", "cucina_vegana:sunflower")
 
 
 		dofile(modpath .. "/sunflower_def.lua")

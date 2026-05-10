@@ -23,12 +23,12 @@ farming.register_plant("cucina_vegana:" .. pname, {
 	visual_scale = 1,
 })
 
-minetest.override_item("cucina_vegana:" .. pname .. "_6", {visual_scale = 1.3})
-minetest.override_item("cucina_vegana:" .. pname .. "_7", {visual_scale = 1.6})
-minetest.override_item("cucina_vegana:" .. pname .. "_8", {visual_scale = 1.9})
+core.override_item("cucina_vegana:" .. pname .. "_6", {visual_scale = 1.3})
+core.override_item("cucina_vegana:" .. pname .. "_7", {visual_scale = 1.6})
+core.override_item("cucina_vegana:" .. pname .. "_8", {visual_scale = 1.9})
 
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_" .. pname, {
+core.register_node("cucina_vegana:wild_" .. pname, {
 	description = S("Wild") .. " " .. dname,
 	paramtype = "light",
 	walkable = false,
@@ -73,7 +73,7 @@ if(cucina_vegana.signs_bot) then
 end
 
 -- mapgen
-minetest.register_decoration({
+core.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_rainforest_litter", "default:dirt"},
 	spawn_by = {"default:jungletree"},

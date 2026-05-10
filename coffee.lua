@@ -1,5 +1,5 @@
 
-minetest.register_decoration({
+core.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_rainforest_litter", "default:dirt",},
 	sidelen = 16,

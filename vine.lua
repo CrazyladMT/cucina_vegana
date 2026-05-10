@@ -1,5 +1,4 @@
-
-minetest.register_decoration({
+core.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_grass", "default:dirt", "default:dry_dirt", "default:dirt_with_dry_grass"},
 	sidelen = 16,

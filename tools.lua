@@ -22,16 +22,16 @@ function cucina_vegana.add_group(node, entry)
     if(type(node) ~= "string") then return end
 
     -- Check the Item and get the group
-    if(minetest.registered_items[node] ~= nil) then
-        newgroup = cucina_vegana.table_clone(minetest.registered_items[node].groups)
+    if(core.registered_items[node] ~= nil) then
+        newgroup = cucina_vegana.table_clone(core.registered_items[node].groups)
 
-    elseif(minetest.registered_tools[node] ~= nil) then
-        newgroup = cucina_vegana.table_clone(minetest.registered_tools[node].groups)
+    elseif(core.registered_tools[node] ~= nil) then
+        newgroup = cucina_vegana.table_clone(core.registered_tools[node].groups)
 
     else -- Node not found.
         return
 
-    end -- if(minetest.registered_nodes
+    end -- if(core.registered_nodes
 
     -- add the new groups to the item
     for key,value in pairs(entry) do
@@ -39,7 +39,7 @@ function cucina_vegana.add_group(node, entry)
 
     end
 
-    minetest.override_item(node, {
+    core.override_item(node, {
                                   groups = newgroup
                                  })
 
@@ -74,6 +74,6 @@ function cucina_vegana.register_farming_ng(pname, step)
     end -- if cucina_vegana.farming_default
 
     print("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
-    minetest.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
+    core.log("info", "[MOD] " .. modname .. ": cucina_vegana:seed_" .. pname .. " at farming_nextgen registered.")
 
 end -- cucina_vegana.register_farming_ng(

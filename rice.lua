@@ -23,7 +23,7 @@ farming.register_plant("cucina_vegana:" .. pname .. "", {
 })
 
 -- Register for Mapgen
-minetest.register_node("cucina_vegana:wild_" .. pname, {
+core.register_node("cucina_vegana:wild_" .. pname, {
 	description = S("Wild") .. " " .. dname,
 	paramtype = "light",
 	walkable = false,
@@ -66,7 +66,7 @@ if(cucina_vegana.signs_bot) then
 
 end
 
-minetest.register_decoration({
+core.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:dirt_with_rainforest_litter", "default:dirt", "default:dirt_with_grass"},
 	spawn_by = {"default:water_source", "default:river_water_source",
